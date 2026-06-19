@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - My Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay" class="overlay">
+        <div class="box">
+            <h2>Welcome to My Portfolio</h2>
+            
+            <div class="iu">
+                <input type="text" id="username" placeholder="Enter Username">
+            </div>
+            
+            <div class="iu">
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            
+            <button id="submit" class="btn">Click Me</button>
+            
+        </div>
+    </div>
+    <script>
+       
+        const loginButton = document.getElementById('submit');
+        const username = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        
+        loginButton.addEventListener('click', function() {
+            if (username.value !== "" && passwordInput.value !== "")
+            {
+                window.location.href = "portfilo.html";
+                
+            } 
+            else
+            {
+                alert("incorrect email and password");
+            }
+        });
+    
+
+    </script>
+</body>
+</html>
